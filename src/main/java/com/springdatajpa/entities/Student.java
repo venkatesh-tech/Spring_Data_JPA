@@ -1,7 +1,12 @@
 package com.springdatajpa.entities;
 
-public class Student {
+import javax.persistence.Entity;
+import javax.persistence.Id;
 
+@Entity
+public class Student {
+	
+	@Id 
 	private long id;
 	private String name;
 	private int testScore;
